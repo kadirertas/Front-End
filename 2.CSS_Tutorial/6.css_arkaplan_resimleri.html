@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkaplan ve Arkaplan Resimleri </title>
+
+    <style>
+        body
+        {
+             background-image: url(./images/logo.jpg);
+             background-size: 200px;
+             background-repeat: no-repeat; /* resimi tekrarlansınmı demektir no-repeat hayır, repeat-x x yönünde tekrarlansın , repeat-y y yönünde tekrarlansın */
+             background-position: top right; /*logo nerde dursun*/
+             background-attachment: fixed;  /*scrol kaydıkca logo sabit kalsınmı */
+        }
+        .box-1
+        {
+             background-color: green;
+             width: 200px ;
+        }
+        .box2
+        {
+            color: white;
+            width: 600px;
+            height: 888px;
+            background-image:url("images/images.jpeg") ;
+            background-size: cover ; /*resimleri belirlen boyuta göre sığdırır*/
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="box-1">
+
+        <h3>
+            box-1
+        </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, corrupti.</p>
+    </div>
+
+    <div class="box2" id="logo">
+        <h3>
+            box-2
+        </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, corrupti.</p>
+    </div>
+    
+</body>
+</html>

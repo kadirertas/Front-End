@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors</title>
+</head>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+          #link {
+            background-color:saddlebrown;
+            color:aqua;
+            width: 150px;
+          }
+          h1,h2
+          {
+                  color:orangered;
+                  font-family: cursive;
+          }
+          .ekran_yazi
+           {
+            color: blue;
+          }
+          .ekran_yazi, #link , p /*görüldüğü gibi bunları birleştirerek de yazarız bu class ı ekran_yazi veya  id si #link  veya p etiketi ne verilen özellikler */
+          {
+                    font-family: monospace;
+          }
+         #link.ekran_yazi{
+            /*bu ise 3 ünü birden bulunduran etiketler için geçerlidir */
+
+            color: oran;
+         }
+         footer{
+               background-color: yellow;
+               color:blue;
+               width: 300px;
+               height: 50px; 
+               margin: 0 auto 0 auto;
+         }
+         a {
+            text-decoration: none;
+            color: aliceblue;
+         }
+         section ul li h3 {
+            background-color: red;
+         }
+
+    </style>
+    <title>Semantik Etiketler</title> 
+
+</head>
+<body>
+    <header>
+        <h1>Ana Başlık</h1>
+        <nav>
+            <ul>
+                <li id="link"><a href="#">Anasayfa</a></li>
+                <li id="link"><a href="#">Hakkımızda</a></li>
+                <li id="link"><a href="#">Hizmetler</a></li>
+                <li id="link"><a href="#">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Hakkımızda</h2>
+            <p  id="link" class="ekran_yazi">Şirketimiz 10 yıldır web geliştirme konusunda uzmanlaşmıştır.</p>
+        </section>
+
+        <section>
+            <h2>Hizmetlerimiz</h2>
+            <ul>
+                <li>
+                    <h3>Web Tasarımı</h3>
+                    <p class="ekran_yazi">Modern ve etkileyici web tasarım hizmetleri sunuyoruz.</p>
+                </li>
+                <li>
+                    <h3>Web Geliştirme</h3>
+                    <p class="ekran_yazi" >Özelleştirilmiş web uygulamaları geliştirme konusunda deneyimliyiz.</p>
+                </li>
+                <li>
+                    <h3>Dijital Pazarlama</h3>
+                    <p class="ekran_yazi" >İnternet pazarlama stratejileri oluşturuyor ve uyguluyoruz.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Şirket Adı. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
+
+</html>
+
+
+
+
+<!--
+   
+    
+    <style>
+         .class{...}    class kullanımı
+         #id {...}    id kullanımı 
+         h1{...}    direk tüm h1 lerin seçildiği 
+         
+         .class , #id {...} class veya id 
+         #id.class {...} class ve id yi aynı anda bulunduran 
+
+         section ul li h3 {...}  sectionun içindeki ul nin içindeki li nin içindeki h3 başlıklanırna etki eder 
+         
+         * {...}  tüm etiketeri kapsar
+
+         bunun gibi birçok farklı kombinasyonlar barındırır 
+    </style>
+
+    
+    -->
+    
+    

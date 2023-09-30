@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Çalışma Hiyerarsisi</title>
+    <style>
+         *{
+            color: aqua ;
+
+        
+         } 
+     
+         h1, h3
+        {
+            color: blue ;
+
+        } 
+        h2{
+            color: blue !important;
+
+        }
+            #hello 
+        {
+            color: yellow;
+            color: chartreuse;
+        }
+   
+
+     
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="hello">Ana Başlık</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">Hizmetler</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2 style="    color: red; ">Hakkımızda</h2>   <!-- !important özelliği olmasa hakkımızda yazısı mavi yerine kırmızı olurdu -->
+            <p>Şirketimiz 10 yıldır web geliştirme konusunda uzmanlaşmıştır.</p>
+        </section>
+
+        <section>
+            <h2>Hizmetlerimiz</h2>
+            <ul>
+                <li>
+                    <h3>Web Tasarımı</h3>
+                    <p>Modern ve etkileyici web tasarım hizmetleri sunuyoruz.</p>
+                </li>
+                <li>
+                    <h3>Web Geliştirme</h3>
+                    <p>Özelleştirilmiş web uygulamaları geliştirme konusunda deneyimliyiz.</p>
+                </li>
+                <li>
+                    <h3>Dijital Pazarlama</h3>
+                    <p>İnternet pazarlama stratejileri oluşturuyor ve uyguluyoruz.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Şirket Adı. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
+
+
+<!-- 
+    çok fazla mantığını anlamadım ama style içinde özellik çağırma yukarıdan aşağı doğru iniyor. Mesela üstte h1 leri mavi yapar altta id ile bir h1 in rengini değiştirrsek son haliyle kalır. 
+    bundan dolayı özellik çağırırken genelden özele doğru çağrılır 
+
+          #hello 
+        {
+            color: yellow;
+            color: chartreuse;
+        }
+    yukarda verilen kod yukardan aşşağıya doğru okunacağından chartreuse rengini ekrana basar 
+
+
+    çalışma önceliği body içinde olduğundan her zaman inline kullanımdadır sen head içinde veya css dosyasında ne yazarsan yaz sonunda o etiket içinde bulunduğundan onun dediği olur. 
+    BUNU ÖNLEMEK İÇİN " !important" özelliği kullanılır (yukarda örneği var )
+
+
+
+
+    NOT: Sonuç olarak !important olmadığı sürece kod hep yukardan aşşağıya doğru okunur external da olsa internal da olsa inline de olsa 
+-->

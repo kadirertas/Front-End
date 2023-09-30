@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form ve Input</title>
+</head>
+
+<body>
+
+    <form>
+
+
+        <label for="name">name</label> <br>
+        <input  type="text" placeholder="your name " id="name" > <br>     
+        <label for="email">Email</label> <br>
+        <input type="email" name="email" id="email">  <br>
+        <label for="pasword">Pasword</label> <br>
+        <input type="password" name="password" id="password"> <br>
+        <label for="tarih">Tarih</label> <br>
+        <input type="date" name="tarih" id="tarih"> <br>
+        Cinsiyet<br>
+        kadın
+        <input type="radio" name="cinsiyet" id=" kadın">
+        erkek
+        <input type="radio" name="cinsiyet" id=" erkek">
+        diğer
+        <input type="radio" name="cinsiyet" id=" diğer" > <br> 
+        
+        HOBBİES <br>
+        Technogy
+        <input type="checkbox" name="tech" id="tech">
+        TV
+        <input type="checkbox" name="TV" id="TV">
+        ART
+        <input type="checkbox" name="ART" id="ART">
+        HEPSİ
+        <input type="checkbox" name="HEPSİ" id="HEPSİ" checked> <br>
+        Degree ( derece)  <br>
+        <select name="degree" id="degree">
+           <option value="bachelor" >Lisans</option>
+           <option value="msd">Yüskek Lisans</option>
+           <option value="phd" >Doktora </option>
+            <option value="seçiniz" selected >seçiniz</option>
+
+         </select> <br>
+         <textarea name="message" id="message" cols="30" rows="10"  placeholder="your message"></textarea> <br>
+ 
+        <input type="submit" value="gönder">
+        <button type="reset">Sıfırla</button> 
+         
+         
+    </form>
+    
+</body>
+</html>
+
+
+<!-- 
+    input etiketi : bu etiket kullanıcıdan veri almak için kullanılır 
+           type parametresi= alınacak verinin tipini  belirler düz mantık mesela text ise yazı radio ise radio button date ise tarih gibi 
+           name parametresi= bu parametre çoğu etikette ortak olan ve ieltişim için kullanılan parametredir mesela 
+           placeholder parametresi = mesaj kutusu içine yazılacak geçici mesajı temsil eder 
+
+             <label for="name">name</label> <br>
+              <input  type="text" id="name" > <br> 
+            bu kodda name yazısına tıkladığında otomatik input kutusu focuslanır sebebi name lerinin aynı olmasıdır 
+            ya da farklı bir örnek verecek olursam radio buttonda mantık tek bir seçim yaptırmaktır bunu sağlayan şey ise radibuttonların name lerinin aynı olmasıdır eğer farklı olursa işlevini yitirir   
+    radio button ve chebox button = butonların özelliği az çok belli ama checked parametresi önemli neden önemli diye sorarsan  checked olan bir buton seçili olarak ekranda gözükür mesela bir burs var ve bu burs istanbulda kalana verilecek adres kısmımnda bulunan il bölümünden istanbul checked edilebilir.       
+
+    textarea etiketi : klasik bir mesaj kutuusu dur köşede bulunan işaret ile büyüyebilir  cols(sütun) rows(satır) etiketleri ile boyutu belirlenebilir 
+             placeholder parametresi = mesaj kutusu içine yazılacak geçici mesajı temsil eder 
+
+    select etiketi : 
+-->

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_tables
+    </title>
+    <style>  
+                                    
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+   <!--üsteki css kullanımı internal css olarak geçer bu kullanımda  head etiketleri arasına style ile sanki kütüphane tanımlar gibi istediğimiz özellikleri kullanmak istediğimiz etiketlerin ismiyle fonksiyon gibi tanımlarız mesela üste verilene göre body arasına yazılan her "table, th , td " etiketli öğeler
+     "  border: 1px solid black;
+        border-collapse: collapse; 
+    " 
+    özelliklerine göre oluşur  
+-->
+</head>
+<body>
+    
+    <table>
+        <thead> 
+            <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+            </tr>
+        </thead>
+       <tbody>
+              <tr>
+            <td>Mustafa</td>
+            <td>Bilişim</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>Ahmet</td>
+            <td>Donanım</td>
+            <td>7000</td>
+        </tr>
+       </tbody>
+  
+    </table>
+    
+</body>
+</html>
+
+<!-- 
+
+    table etiketi: bu etiket tablo oluşturmak için kullanılır 
+                   tr etiketi (table row)= tabloda sütun oluşturmak için kullanılır içinde bulunan her eleman  sütun elemanıdır 
+                   th etiketi (table head)= tablodai elemanları yazmak için kullanılır yazıyı kalın yazar 
+                   td etiketi (table data)= tablodaki elemanları yazmak içim  kulllanılır 
+                   thead etiketi =  table içinde bulunan başlık kısmı thead etiketleri içinde yazılır 
+                   tbody etiketi = table içinde bulunan veri kısmı tbody etiketleri içinde yazılır 
+                   thead ve tbody etiketlerini görünüme etkisi olmaz kod düzenini sağlamaktır. 
+
+-->

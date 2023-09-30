@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Using Css</title>
+</head>
+<body>
+
+     <h1>BAŞLIK 1</h1>
+     <div class="SELAM"></div>
+
+</body>
+</html>
+
+<!--
+    Inline CSS (İç İçe Stil):
+Bu yöntemde, her bir HTML öğesi için stil doğrudan etiketin içine yazılır. Bu şekilde, her öğenin stilini ayrı ayrı belirleyebilirsiniz. Aşağıda bir örnek:
+
+html
+Copy code
+<p style="color: blue; font-size: 16px;">Bu metin mavi renkte ve 16 piksel boyutunda.</p>
+
+
+
+
+
+
+Internal CSS (İç Stil):
+İç stil, HTML belgesinin <head> bölümüne <style> etiketi içinde tanımlanan CSS kurallarını içerir. Bu yöntem, aynı stil kurallarının birçok öğede kullanılması gerektiğinde kullanışlıdır.
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <p>Bu metin mavi renkte ve 16 piksel boyutunda.</p>
+</body>
+</html>
+
+
+
+
+
+External CSS (Dış Stil):
+Dış stil, CSS kurallarını ayrı bir .css uzantılı dosyada tanımlayarak ve HTML belgesine bu stil dosyasını ekleyerek kullanılır. Bu yöntem, bir web sitesinin tüm sayfalarında aynı stilin kullanılmasını sağlar ve bakımı kolaylaştırır.
+
+Önce stil kurallarını içeren bir .css dosyası oluşturun (örneğin, style.css):
+
+css
+Copy code
+/* style.css */
+p {
+    color: blue;
+    font-size: 16px;
+}
+Sonra HTML belgesinde bu stil dosyasını ekleyin:
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <p>Bu metin mavi renkte ve 16 piksel boyutunda.</p>
+</body>
+</html>
+Bu üç temel CSS kullanım yöntemi, web sayfalarınızın görünümünü kişiselleştirmenize yardımcı olacaktır. CSS ile daha fazla stil ve düzenleme yapabilirsiniz, ancak bu temel kullanım yöntemleri size başlamak için iyi bir temel sunar.
+-->
